@@ -1,25 +1,51 @@
 # Wave 5 Closure Dashboard
 
-> Last updated: 2026-07-29
+> Last updated: 2026-07-30
 
 ## Issue Completion
 
 | Metric | Value |
 |--------|-------|
-| Total Wave 5 issues | 104 |
+| Total Wave 5 issues | 102 |
 | Closed | 100 |
-| Open | 4 |
-| Completion | 96% |
+| Open | 2 |
+| Completion | 98% |
 
 ## Open Issues
 
-- [ ] #191 [FE-033] Add wallet funding and trustline refresh controls with clearer polling state
-- [ ] #190 [FE-032] Normalize dashboard query keys and cache invalidation rules
-- [ ] #187 [FE-029] Add dashboard compare mode for two time windows
-- [ ] #186 [FE-028] Add explorer links and network metadata to payment and wallet views
+- [ ] #408 Outages: Render severity and status badges on Outage row cards
+- [ ] #404 Payments: Add date-range validation and clear-filters action button in PaymentsView
 
 ## Closed Issues
 
+- [x] #433 Accessibility: Fix dark mode text contrast ratios and visible focus rings
+- [x] #432 Docs: Update CONTRIBUTING.md with UI component and hook testing guidelines
+- [x] #431 Refactor: Extract shared Card and Badge sub-components in SettingsPage
+- [x] #430 DX: Add OpenAPI schema drift validation CLI script
+- [x] #429 Testing: Add Vitest unit tests for paymentService API response mappings
+- [x] #428 Testing: Add unit tests for outage resolution SLA calculations in outages service
+- [x] #427 Notifications: Add auto-dismiss countdown progress bar to Toast component
+- [x] #426 Performance: Memoize timeline node rendering and windowing in IncidentTimeline
+- [x] #425 Performance: Debounce search input updates in useOutageSearchAndLayout hook
+- [x] #424 Type Safety: Enforce strict TypeScript types for Axios API error envelopes
+- [x] #423 Shared: Replace plain text placeholders with centralized EmptyState component
+- [x] #422 Shared: Display global offline banner notification when backend server is unreachable
+- [x] #421 Webhooks: Add formatted JSON tree viewer toggle in PayloadViewer
+- [x] #420 Webhooks: Add event type and HTTP status code filtering dropdowns
+- [x] #419 Bulk Import: Add pre-flight line-by-line CSV validation error table
+- [x] #418 Bulk Import: Add drag-over visual state and 5MB max file size check
+- [x] #417 Navigation: Add reusable Breadcrumb navigation bar on sub-pages
+- [x] #416 Navigation: Set aria-current on active links and handle Escape key on mobile menu
+- [x] #415 Settings: Add one-click copy button with toast feedback for WalletAddress
+- [x] #414 Settings: Add client-side password strength meter for Register & Password forms
+- [x] #413 Dashboard: Add keyboard focus trap and ARIA labels to SLA SVG charts
+- [x] #412 Dashboard: Add quick-preset date range selector buttons in SLADashboardView
+- [x] #411 SLA Config: Add dirty form state confirmation before closing edit dialog
+- [x] #410 Outages: Add resolution preview step in ResolveOutageModal
+- [x] #409 Outages: Add MTTR duration helper calculator in OutageDetailsPage
+- [x] #407 Outages: Add master Select All header checkbox with indeterminate state
+- [x] #406 Outages: Implement real batch delete and CSV export in OutagesPageClient
+- [x] #405 Payments: Enable column sorting for Amount and Status in Payments table
 - [x] #380 [FE-W7-012] Accessibility audit and WCAG 2.1 AA compliance fixes
 - [x] #379 [FE-W7-011] Batch outage operations with selection state and confirmations
 - [x] #378 [FE-W7-010] Audit log viewer with filtering, search, and export
@@ -92,34 +118,6 @@
 - [x] #270 [FE-W5-099] Expand Playwright to cover webhook replay and dead-letter recovery
 - [x] #269 [FE-W5-098] Implement accessibility regression suite for route-critical components
 - [x] #268 [FE-W5-097] Add keyboard-first power navigation across operations routes
-- [x] #267 [FE-W5-096] Implement screen-reader optimized summaries for complex tables/charts
-- [x] #266 [FE-W5-095] Add high-contrast and reduced-motion accessibility mode support
-- [x] #265 [FE-W5-094] Implement consistent empty-state semantics for analytics widgets
-- [x] #264 [FE-W5-093] Add analytics anomaly highlight overlays with explainability notes
-- [x] #263 [FE-W5-092] Implement confidence and sample-size indicators on KPI cards
-- [x] #262 [FE-W5-091] Add analytics axis/units validator to prevent misleading chart scales
-- [x] #261 [FE-W5-090] Implement webhook operations command palette for high-volume triage
-- [x] #260 [FE-W5-089] Add webhook schema compatibility tester in UI
-- [x] #259 [FE-W5-088] Implement webhook destination safety warnings in create/edit flows
-- [x] #258 [FE-W5-087] Add webhook payload diff viewer across retries
-- [x] #257 [FE-W5-086] Implement live delivery stream updates with backpressure-safe polling
-- [x] #256 [FE-W5-085] Add webhook replay guard UX to prevent accidental duplicate replays
-- [x] #255 [FE-W5-084] Implement webhook endpoint health score and degradation hints
-- [x] #254 [FE-W5-083] Add webhook delivery attempt waterfall visualization
-- [x] #253 [FE-W5-082] Implement outage route resilience under intermittent backend mode changes
-- [x] #252 [FE-W5-081] Add outage SLA/payment chain-of-custody visual map
-- [x] #251 [FE-W5-080] Implement outage import reconciliation UI for partial success runs
-- [x] #250 [FE-W5-079] Add outage bulk-action safety rails with preview/impact summaries
-- [x] #249 [FE-W5-078] Implement SLA recalculation provenance indicators in outage detail
-- [x] #248 [FE-W5-077] Add outage timeline diff mode for before/after field mutations
-- [x] #247 [FE-W5-076] Implement outage resolution race-condition guard UX
-- [x] #246 [FE-W5-075] Add SLA decision trace panel with reason-code rendering
-- [x] #245 [FE-W5-074] Implement frontend contract sandbox for payload replay debugging
-- [x] #244 [FE-W5-073] Add typed webhook signature metadata inspector UX
-- [x] #243 [FE-W5-072] Implement client contract compatibility matrix for backend versions
-- [x] #242 [FE-W5-071] Add strong typed normalizers for outage/payment/webhook entities
-- [x] #241 [FE-W5-070] Implement contract drift warning center for admin operators
-- [x] #240 [FE-W5-069] Add typed API error envelope parser with domain-specific fallbacks
 
 ---
 _Auto-generated by `scripts/update-wave5-dashboard.mjs`. Do not edit manually._
