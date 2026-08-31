@@ -1,26 +1,30 @@
 # Wave 5 Closure Dashboard
 
-> Last updated: 2026-08-30
+> Last updated: 2026-08-31
 
 ## Issue Completion
 
 | Metric | Value |
 |--------|-------|
-| Total Wave 5 issues | 108 |
+| Total Wave 5 issues | 112 |
 | Closed | 100 |
-| Open | 8 |
-| Completion | 93% |
+| Open | 12 |
+| Completion | 89% |
 
 ## Open Issues
 
-- [ ] #539 A11y: Add skip-to-main-content accessibility link for screen reader navigation
-- [ ] #538 A11y: Add visible keyboard focus rings across all interactive buttons and inputs
-- [ ] #537 A11y: Add screen reader live region notifications for status changes
-- [ ] #536 State: Add automated local storage quota cleanup utility
-- [ ] #535 State: Add developer debug panel showing live Zustand store state trees
-- [ ] #534 State: Add cross-tab broadcast channel for real-time state synchronization
-- [ ] #533 State: Add preference import validation schema with error reporting
-- [ ] #532 State: Add workspace data export to JSON backup file
+- [ ] #511 Webhooks: Add webhook endpoint ping test button in Create Webhook modal
+- [ ] #509 Webhooks: Add webhook secret key rotation modal with grace period window
+- [ ] #508 Webhooks: Add manual webhook redelivery trigger button in WebhooksView
+- [ ] #507 Webhooks: Add payload syntax highlighter in WebhookDeliveryDetailsModal
+- [ ] #506 Disputes: Add dispute status change webhook notification trigger option
+- [ ] #498 Disputes: Add SLA result calculation re-simulation button in dispute viewer
+- [ ] #497 Disputes: Add dispute reason category filter (MTTR Error, Threshold Mismatch, Outage Timing)
+- [ ] #496 Disputes: Add dispute escalation workflow to senior management
+- [ ] #495 Disputes: Add evidence document previewer modal for dispute attachments
+- [ ] #494 Disputes: Add resolution notes template selector in ResolveDisputeModal
+- [ ] #493 Disputes: Add dispute audit log history viewer in SLADisputesView
+- [ ] #492 SLA Config: Add dirty form state confirmation before closing edit dialog
 
 ## Closed Issues
 
@@ -56,6 +60,42 @@
 - [x] #542 A11y: Add keyboard shortcuts modal for table navigation (J / K next / previous row)
 - [x] #541 A11y: Add accessible color contrast compliance check for severity badges
 - [x] #540 A11y: Add proper ARIA role and expanded attributes to collapsible navigation sidebars
+- [x] #539 A11y: Add skip-to-main-content accessibility link for screen reader navigation
+- [x] #538 A11y: Add visible keyboard focus rings across all interactive buttons and inputs
+- [x] #537 A11y: Add screen reader live region notifications for status changes
+- [x] #536 State: Add automated local storage quota cleanup utility
+- [x] #535 State: Add developer debug panel showing live Zustand store state trees
+- [x] #534 State: Add cross-tab broadcast channel for real-time state synchronization
+- [x] #533 State: Add preference import validation schema with error reporting
+- [x] #532 State: Add workspace data export to JSON backup file
+- [x] #531 State: Add optimistic UI state updates for outage status transitions
+- [x] #530 State: Add toast notification queue deduplication middleware
+- [x] #529 State: Add user preference store for default table page size (10, 25, 50, 100)
+- [x] #528 State: Add active navigation tab persistence in URL query parameters
+- [x] #527 State: Add theme preference persistence across browser tabs via StorageEvent listener
+- [x] #526 State: Add session timeout warning modal after 30 minutes of inactivity
+- [x] #525 State: Add active user role and permission guards in UI store
+- [x] #524 State: Add reactive online/offline network connection state listener
+- [x] #523 State: Add global UI state reset action button in App Settings
+- [x] #522 State: Add Zustand local storage persistence schema versioning migration helper
+- [x] #521 Webhooks: Add webhook delivery status filter pills (All, Success, Retrying, Failed)
+- [x] #520 Webhooks: Add webhook payload schema documentation popover
+- [x] #519 Webhooks: Add export webhook delivery logs to JSON / CSV
+- [x] #518 Webhooks: Add webhook delivery log retention period selector
+- [x] #517 Webhooks: Add custom HTTP headers key-value editor for webhook dispatches
+- [x] #516 Webhooks: Add webhook endpoint disable toggle on consecutive failure threshold
+- [x] #515 Webhooks: Add webhook max retries and exponential backoff configuration slider
+- [x] #514 Webhooks: Add HMAC SHA-256 signature verification code generator snippet
+- [x] #513 Webhooks: Add GIN index search box for searching webhook JSON payloads
+- [x] #512 Webhooks: Add webhook event subscription multi-select checkboxes (sla.violation, sla.warning, sla.resolved)
+- [x] #510 Webhooks: Add webhook delivery success rate latency chart
+- [x] #505 Disputes: Add dispute SLA credit adjustment preview modal
+- [x] #504 Disputes: Add dispute search by SLA Result ID or Outage ID
+- [x] #503 Disputes: Add dispute statistics summary KPI cards
+- [x] #502 Disputes: Add dispute notification email recipient tags
+- [x] #501 Disputes: Add export dispute audit log to PDF for legal compliance
+- [x] #500 Disputes: Add bulk dispute status resolution actions
+- [x] #499 Disputes: Add dispute resolution deadline countdown timer
 - [x] #454 Dashboard: Add auto-refresh interval toggle (10s, 30s, 60s, Off) in dashboard header
 - [x] #453 Dashboard: Add MTTR (Mean Time to Resolution) distribution histogram component
 - [x] #452 Dashboard: Add SLA penalty and reward aggregate financial widget
@@ -88,42 +128,6 @@
 - [x] #412 Dashboard: Add quick-preset date range selector buttons in SLADashboardView
 - [x] #411 SLA Config: Add dirty form state confirmation before closing edit dialog
 - [x] #410 Outages: Add resolution preview step in ResolveOutageModal
-- [x] #409 Outages: Add MTTR duration helper calculator in OutageDetailsPage
-- [x] #408 Outages: Render severity and status badges on Outage row cards
-- [x] #407 Outages: Add master Select All header checkbox with indeterminate state
-- [x] #406 Outages: Implement real batch delete and CSV export in OutagesPageClient
-- [x] #405 Payments: Enable column sorting for Amount and Status in Payments table
-- [x] #404 Payments: Add date-range validation and clear-filters action button in PaymentsView
-- [x] #380 [FE-W7-012] Accessibility audit and WCAG 2.1 AA compliance fixes
-- [x] #379 [FE-W7-011] Batch outage operations with selection state and confirmations
-- [x] #378 [FE-W7-010] Audit log viewer with filtering, search, and export
-- [x] #377 [FE-W7-009] Real-time notification bell with unread count and SSE
-- [x] #376 [FE-W7-008] Dashboard widget layout persistence with drag-and-drop
-- [x] #375 [FE-W7-007] Full-text outage search with debounced backend integration
-- [x] #374 [FE-W7-006] Keyboard shortcut guide overlay for power user workflows
-- [x] #373 [FE-W7-005] Outage severity badge system with WCAG-compliant colors
-- [x] #372 [FE-W7-004] Payment detail drawer with transaction chain timeline
-- [x] #371 [FE-W7-003] SLA config editor with live preview and validation feedback
-- [x] #370 [FE-W7-002] Webhook management CRUD interface with delivery status
-- [x] #369 [FE-W7-001] Dedicated login page with form validation and error states
-- [x] #367 [FE-W6-031] Migrate access and refresh tokens from localStorage to httpOnly cookies
-- [x] #365 [FE-W6-030] Add Playwright end-to-end test suite for critical incident management workflows
-- [x] #364 [FE-W6-029] Implement form validation with react-hook-form across create/edit flows
-- [x] #363 [FE-W6-028] Migrate axios to native fetch with typed interceptor layer
-- [x] #362 [FE-W6-027] Add webhook delivery history replay UI with diff view
-- [x] #361 [FE-W6-026] Implement payment reconciliation status badge with drill-down
-- [x] #360 [FE-W6-025] Add TypeScript strict mode and fix all resulting type errors
-- [x] #359 [FE-W6-024] Implement bulk outage selection and batch status update workflow
-- [x] #358 [FE-W6-023] Add SLA compliance trend chart with configurable time windows
-- [x] #357 [FE-W6-022] Implement outage timeline visualization with interactive Gantt view
-- [x] #356 [FE-W6-021] Add ARIA live region announcements for async state changes
-- [x] #355 [FE-W6-020] Add Content Security Policy headers via Next.js config
-- [x] #354 [FE-W6-019] Implement token refresh with silent re-auth and queue of pending requests
-- [x] #353 [FE-W6-018] Add Lighthouse CI performance budget enforcement in GitHub Actions
-- [x] #352 [FE-W6-017] Add internationalization (i18n) infrastructure with locale switching
-- [x] #351 [FE-W6-016] Implement real-time outage status updates via Server-Sent Events
-- [x] #350 [FE-W6-015] Implement breadcrumb navigation component for nested routes
-- [x] #349 [FE-W6-014] Add unit tests for all custom React hooks (useSession, useSlaConfig, etc.)
 
 ---
 _Auto-generated by `scripts/update-wave5-dashboard.mjs`. Do not edit manually._
