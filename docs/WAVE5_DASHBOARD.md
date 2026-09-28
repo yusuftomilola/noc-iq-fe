@@ -1,47 +1,19 @@
 # Wave 5 Closure Dashboard
 
-> Last updated: 2026-09-27
+> Last updated: 2026-09-28
 
 ## Issue Completion
 
 | Metric | Value |
 |--------|-------|
-| Total Wave 5 issues | 134 |
+| Total Wave 5 issues | 106 |
 | Closed | 100 |
-| Open | 34 |
-| Completion | 75% |
+| Open | 6 |
+| Completion | 94% |
 
 ## Open Issues
 
-- [ ] #689 Form Validation: Add debounced live input validation feedback
-- [ ] #655 Wallet: Add transaction submission status tracker drawer
-- [ ] #653 Wallet: Add SLA penalty disbursement transaction builder modal
-- [ ] #652 Wallet: Implement XLM and custom SAC token balance inspector
-- [ ] #649 Dispute View: Implement dispute export report generator
-- [ ] #643 Dispute View: Implement dispute filtering drawer on dashboard view
-- [ ] #642 Dispute View: Add dispute SLA metric impact calculator component
-- [ ] #641 Dispute View: Implement dispute arbitration vote decision panel for admins
-- [ ] #640 Dispute View: Add arbitration evidence attachment manager
-- [ ] #635 Bulk Import: Add import history log drawer
-- [ ] #634 Bulk Import: Implement timezone offset converter in import wizard
-- [ ] #633 Bulk Import: Add client-side CSV parsing worker thread
 - [ ] #632 Bulk Import: Implement import execution summary notification modal
-- [ ] #631 Bulk Import: Add duplicate row detection and skip option
-- [ ] #630 Bulk Import: Implement import progress bar with cancel capability
-- [ ] #629 Bulk Import: Add downloadable sample CSV template builder
-- [ ] #628 Bulk Import: Implement inline cell error editing in validation preview
-- [ ] #627 Bulk Import: Add real-time row validation preview table
-- [ ] #626 Bulk Import: Implement client-side CSV column mapping wizard
-- [ ] #625 Bulk Import: Add CSV file drag-and-drop zone with format validation
-- [ ] #624 Outage Table: Add auto-refresh polling status indicator
-- [ ] #623 Outage Table: Implement empty state placeholder with action CTAs
-- [ ] #622 Outage Table: Add status tab filter pills (All, Active, Resolved, Closed)
-- [ ] #621 Outage Table: Implement bulk selection checkboxes with batch actions bar
-- [ ] #620 Outage Table: Add expandable row details summary drawer
-- [ ] #607 Dashboard: Add SLA penalty credit summary widget
-- [ ] #606 Dashboard: Implement dashboard layout customization state persistence
-- [ ] #605 Dashboard: Add SLA target breach toast notification handler
-- [ ] #604 Dashboard: Implement active outage alert banner on dashboard view
 - [ ] #603 Dashboard: Add SLA compliance history time-series chart
 - [ ] #602 Dashboard: Implement site filter selector for dashboard metrics
 - [ ] #601 Dashboard: Add interactive SLA breach risk gauge chart
@@ -84,6 +56,7 @@
 - [x] #692 Form Validation: Implement race condition guard hook for concurrent mutation requests
 - [x] #691 Form Validation: Add Optimistic UI update and rollback hook for status toggles
 - [x] #690 Form Validation: Implement password strength meter and validator component
+- [x] #689 Form Validation: Add debounced live input validation feedback
 - [x] #688 Form Validation: Implement stale data detection guard hook on form submission
 - [x] #687 Form Validation: Add Zod schema validation for outage creation form
 - [x] #686 Navigation: Implement custom theme switcher toggle (Light, Dark, System)
@@ -117,39 +90,38 @@
 - [x] #658 Wallet: Implement QR code modal for public key sharing
 - [x] #657 Wallet: Add wallet disconnect button with session state cleanup
 - [x] #656 Wallet: Implement active network passphrase mismatch detection alert
+- [x] #655 Wallet: Add transaction submission status tracker drawer
 - [x] #654 Wallet: Implement multi-sig signature collection progress meter for disbursements
+- [x] #653 Wallet: Add SLA penalty disbursement transaction builder modal
+- [x] #652 Wallet: Implement XLM and custom SAC token balance inspector
 - [x] #651 Wallet: Add Freighter wallet connection status indicator and auto-connect prompt
 - [x] #650 Dispute View: Add dispute submission rate limit warning toast
+- [x] #649 Dispute View: Implement dispute export report generator
 - [x] #648 Dispute View: Add dispute outcome notification banner on outage page
 - [x] #647 Dispute View: Implement dispute notes and internal comment thread component
 - [x] #646 Dispute View: Add dispute countdown timer to arbitration deadline
 - [x] #645 Dispute View: Implement dispute resolution confirmation modal
 - [x] #644 Dispute View: Add dispute bond collateral summary card
+- [x] #643 Dispute View: Implement dispute filtering drawer on dashboard view
+- [x] #642 Dispute View: Add dispute SLA metric impact calculator component
+- [x] #641 Dispute View: Implement dispute arbitration vote decision panel for admins
+- [x] #640 Dispute View: Add arbitration evidence attachment manager
 - [x] #639 Dispute View: Implement dispute status timeline visualizer component
 - [x] #638 Dispute View: Add formal dispute filing modal component
 - [x] #637 Bulk Import: Add bulk import dry-run simulation mode toggle
 - [x] #636 Bulk Import: Implement multi-file bulk import queue manager
-- [x] #619 Outage Table: Implement column visibility toggle drawer
-- [x] #618 Outage Table: Add CSV export button for filtered table rows
-- [x] #617 Outage Table: Implement row action dropdown menu (Edit, Resolve, Delete)
-- [x] #616 Outage Table: Add full-text search filter input across outage descriptions
-- [x] #615 Outage Table: Implement severity badge color status indicators
-- [x] #614 Outage Table: Add date range calendar filter picker
-- [x] #613 Outage Table: Implement multi-column sorting controls
-- [x] #612 Outage Table: Add virtualized scrolling for high-volume outage lists
-- [x] #611 Dashboard: Add live system health status indicator widget
-- [x] #610 Dashboard: Implement skeleton loading state placeholders for metric cards
-- [x] #609 Dashboard: Add dashboard data export summary modal
-- [x] #608 Dashboard: Implement dark mode color contrast optimization for charts
-- [x] #571 CI: Add automated release evidence package builder script
-- [x] #570 CI: Add automated Visual Regression Testing via Playwright screenshots
-- [x] #569 CI: Add Mock Service Worker (MSW) integration for offline Vitest component tests
-- [x] #568 CI: Add Docker container build and image security scan workflow
-- [x] #567 CI: Add PR Title Semantic Release validator workflow
-- [x] #566 CI: Add automated Next.js bundle size regression monitor
-- [x] #565 CI: Add automated ESLint and Prettier code quality check in GitHub Actions
-- [x] #564 CI: Add Lighthouse CI automated accessibility and performance audit workflow
-- [x] #563 CI: Add Vitest unit test coverage threshold enforcement (85% lines)
+- [x] #635 Bulk Import: Add import history log drawer
+- [x] #634 Bulk Import: Implement timezone offset converter in import wizard
+- [x] #633 Bulk Import: Add client-side CSV parsing worker thread
+- [x] #631 Bulk Import: Add duplicate row detection and skip option
+- [x] #630 Bulk Import: Implement import progress bar with cancel capability
+- [x] #629 Bulk Import: Add downloadable sample CSV template builder
+- [x] #628 Bulk Import: Implement inline cell error editing in validation preview
+- [x] #627 Bulk Import: Add real-time row validation preview table
+- [x] #626 Bulk Import: Implement client-side CSV column mapping wizard
+- [x] #625 Bulk Import: Add CSV file drag-and-drop zone with format validation
+- [x] #624 Outage Table: Add auto-refresh polling status indicator
+- [x] #623 Outage Table: Implement empty state placeholder with action CTAs
 
 ---
 _Auto-generated by `scripts/update-wave5-dashboard.mjs`. Do not edit manually._
