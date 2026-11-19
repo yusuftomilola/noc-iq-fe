@@ -1,19 +1,30 @@
 # Wave 5 Closure Dashboard
 
-> Last updated: 2026-11-18
+> Last updated: 2026-11-19
 
 ## Issue Completion
 
 | Metric | Value |
 |--------|-------|
-| Total Wave 5 issues | 100 |
+| Total Wave 5 issues | 112 |
 | Closed | 100 |
-| Open | 0 |
-| Completion | 100% |
+| Open | 12 |
+| Completion | 89% |
 
 ## Open Issues
 
-_All issues closed! 🎉_
+- [ ] #1044 Telemetry privacy: apply redaction before buffering offline events
+- [ ] #1043 Live delivery stream: resume from the last acknowledged event after reconnect
+- [ ] #1042 Contract compatibility: report removed required fields separately from additions
+- [ ] #1041 Destination safety: reject URL credentials and encoded loopback hosts
+- [ ] #1040 Chain of custody: canonicalize evidence manifest ordering
+- [ ] #1039 Timezone conversion: disambiguate repeated local times at DST fall-back
+- [ ] #1038 CSV worker: cancel stale parse work when a new file replaces the current file
+- [ ] #1037 Query recovery: cap repeated recovery attempts for persistent 401 responses
+- [ ] #1036 Fetch client: distinguish aborts from network failures
+- [ ] #1035 Network status: prevent duplicate reconnect banners during rapid flaps
+- [ ] #1034 Session expiry modal: restore focus to the invoking control
+- [ ] #1033 Webhook delivery filter: preserve the selected filter on browser back
 
 ## Closed Issues
 
