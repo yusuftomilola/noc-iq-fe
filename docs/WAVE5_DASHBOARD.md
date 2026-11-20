@@ -1,15 +1,15 @@
 # Wave 5 Closure Dashboard
 
-> Last updated: 2026-11-19
+> Last updated: 2026-11-20
 
 ## Issue Completion
 
 | Metric | Value |
 |--------|-------|
-| Total Wave 5 issues | 112 |
+| Total Wave 5 issues | 196 |
 | Closed | 100 |
-| Open | 12 |
-| Completion | 89% |
+| Open | 96 |
+| Completion | 51% |
 
 ## Open Issues
 
@@ -25,6 +25,90 @@
 - [ ] #1035 Network status: prevent duplicate reconnect banners during rapid flaps
 - [ ] #1034 Session expiry modal: restore focus to the invoking control
 - [ ] #1033 Webhook delivery filter: preserve the selected filter on browser back
+- [ ] #1032 Webhook replay: handle a stale delivery after subscription deletion
+- [ ] #1031 Webhook replay: guard duplicate submits while a replay is pending
+- [ ] #967 Testing: Add tests for SLA config form save/validation
+- [ ] #966 Testing: Add tests for the create outage form validation
+- [ ] #965 Testing: Add tests for payments service response mapping
+- [ ] #964 Testing: Add unit tests for normalizeApiError status mapping
+- [ ] #963 Testing: Add unit tests for outages filter URL synchronization
+- [ ] #962 State: Persist the outages page-size preference across sessions
+- [ ] #961 Filtering: Validate date-range filters so start is not after end
+- [ ] #960 Filtering: Add active filter chips with individual remove actions
+- [ ] #959 Search: Add a clear (x) button to the outages search input
+- [ ] #958 Search: Debounce the outages search input
+- [ ] #957 Performance: Add stable keys to outage list items
+- [ ] #956 Performance: Lazy-load the chart library on the dashboard route
+- [ ] #955 Performance: Debounce dashboard filter changes
+- [ ] #954 Performance: Memoize the outage table row component
+- [ ] #953 Responsive: Collapse outages filters into a mobile drawer
+- [ ] #952 Responsive: Stack KPI cards vertically on small screens
+- [ ] #951 Responsive: Make the outages table header sticky on scroll
+- [ ] #950 Responsive: Wrap wide tables in a horizontal scroll container
+- [ ] #949 Empty states: Add a 'log an outage' CTA to the outages empty state
+- [ ] #948 Error states: Add copy correlation ID action to error cards
+- [ ] #947 Error states: Add a friendly message for HTTP 413 responses
+- [ ] #946 Loading: Add a skeleton list for the webhooks page
+- [ ] #945 Loading: Add a route-level skeleton for the outage detail page
+- [ ] #944 Forms: Disable submit while a create/edit request is pending
+- [ ] #943 Forms: Trim leading and trailing whitespace on text input blur
+- [ ] #942 Forms: Add max-length hint beneath the site name input
+- [ ] #941 Accessibility: Add aria-live to asynchronous inline validation errors
+- [ ] #940 Accessibility: Add a caption to the payments table
+- [ ] #939 Accessibility: Add aria-current to the active pagination page
+- [ ] #938 Accessibility: Add an accessible name to the outages search input
+- [ ] #937 Accessibility: Announce toast confirmations via the live region
+- [ ] #936 Accessibility: Add aria-busy to loading containers
+- [ ] #935 Navigation: Add explicit focus-visible styling to nav links
+- [ ] #934 Navigation: Add tooltips to collapsed sidebar icon links
+- [ ] #933 Bulk Import: Show the detected row count before processing
+- [ ] #932 Bulk Import: Add per-row jump-to-error navigation in the validation table
+- [ ] #931 Bulk Import: Add remove-file control and filename display after selection
+- [ ] #930 Settings: Add one-click copy for the linked wallet address
+- [ ] #929 Settings: Add an empty state for the session management list
+- [ ] #928 Settings: Add confirmation before logging out all sessions
+- [ ] #927 Settings: Add last-login timestamp to the account profile card
+- [ ] #926 Config: Show a read-only notice when the user lacks admin role
+- [ ] #925 Config: Add success feedback after saving SLA configuration
+- [ ] #924 Config: Add an unsaved-changes badge to the SLA config form
+- [ ] #923 Config: Add a per-severity reset-to-default action
+- [ ] #922 Webhooks: Disable the test-ping action for inactive webhooks
+- [ ] #921 Webhooks: Add a delivery status legend to the history panel
+- [ ] #920 Webhooks: Add URL format hint to the create webhook form
+- [ ] #919 Webhooks: Add copy button for webhook endpoint ID
+- [ ] #918 Webhooks: Add an empty state when no webhooks are registered
+- [ ] #917 Payments: Add tooltip explanations for payment status pills
+- [ ] #916 Payments: Add confirmation before retrying a failed payment
+- [ ] #915 Payments: Add a page-size selector to the payments table
+- [ ] #914 Payments: Add an empty state when no payments match filters
+- [ ] #913 Payments: Add an asset badge next to the payment amount
+- [ ] #912 Payments: Add copy transaction hash action to payments table rows
+- [ ] #911 Dashboard: Add a retry action to the dashboard error state
+- [ ] #910 Dashboard: Respect reduced-motion for animated KPI counters
+- [ ] #909 Dashboard: Add helper text when no comparison baseline is available
+- [ ] #908 Dashboard: Add unit suffixes to KPI card values
+- [ ] #907 Dashboard: Format KPI values with locale-aware number separators
+- [ ] #906 Dashboard: Add accessible titles to each analytics chart SVG
+- [ ] #905 Dashboard: Add a manual refresh action to the dashboard header
+- [ ] #904 Dashboard: Add a 'last updated' caption under the dashboard header
+- [ ] #903 Outages: Add a back-to-list link in the outage not-found state
+- [ ] #902 Outages: Add a severity legend to the outages page header
+- [ ] #901 Outages: Add tooltip explaining SLA status badges on outage rows
+- [ ] #900 Outages: Add optimistic row removal when an outage is deleted
+- [ ] #899 Outages: Verify clear-search action resets pagination to first page
+- [ ] #898 Outages: Add inline numeric validation for affected subscribers field
+- [ ] #897 Outages: Display timezone abbreviation in detail page timestamps
+- [ ] #896 Outages: Add a Clear All Filters action to the outages toolbar
+- [ ] #895 Outages: Add record count summary above the outages table
+- [ ] #894 Outages: Add copy-to-clipboard action for outage ID on detail page
+- [ ] #893 Outages: Show relative "time ago" labels for detected_at values
+- [ ] #491 Payments: Add payment wallet balance threshold warning alert banner
+- [ ] #490 Payments: Add real-time payment status WebSocket listener
+- [ ] #489 Payments: Add payment transaction memo viewer in payment details drawer
+- [ ] #488 Payments: Add manual payment transaction override and force-retry modal
+- [ ] #487 Payments: Add payment transaction fee reimbursement monitor
+- [ ] #486 Payments: Add payment failure taxonomy breakdown pie chart
+- [ ] #485 Payments: Add export payment settlement ledger to CSV for accounting
 
 ## Closed Issues
 
