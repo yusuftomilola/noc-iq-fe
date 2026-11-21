@@ -1,117 +1,36 @@
 # Wave 5 Closure Dashboard
 
-> Last updated: 2026-11-20
+> Last updated: 2026-11-21
 
 ## Issue Completion
 
 | Metric | Value |
 |--------|-------|
-| Total Wave 5 issues | 196 |
+| Total Wave 5 issues | 100 |
 | Closed | 100 |
-| Open | 96 |
-| Completion | 51% |
+| Open | 0 |
+| Completion | 100% |
 
 ## Open Issues
 
-- [ ] #1044 Telemetry privacy: apply redaction before buffering offline events
-- [ ] #1043 Live delivery stream: resume from the last acknowledged event after reconnect
-- [ ] #1042 Contract compatibility: report removed required fields separately from additions
-- [ ] #1041 Destination safety: reject URL credentials and encoded loopback hosts
-- [ ] #1040 Chain of custody: canonicalize evidence manifest ordering
-- [ ] #1039 Timezone conversion: disambiguate repeated local times at DST fall-back
-- [ ] #1038 CSV worker: cancel stale parse work when a new file replaces the current file
-- [ ] #1037 Query recovery: cap repeated recovery attempts for persistent 401 responses
-- [ ] #1036 Fetch client: distinguish aborts from network failures
-- [ ] #1035 Network status: prevent duplicate reconnect banners during rapid flaps
-- [ ] #1034 Session expiry modal: restore focus to the invoking control
-- [ ] #1033 Webhook delivery filter: preserve the selected filter on browser back
-- [ ] #1032 Webhook replay: handle a stale delivery after subscription deletion
-- [ ] #1031 Webhook replay: guard duplicate submits while a replay is pending
-- [ ] #967 Testing: Add tests for SLA config form save/validation
-- [ ] #966 Testing: Add tests for the create outage form validation
-- [ ] #965 Testing: Add tests for payments service response mapping
-- [ ] #964 Testing: Add unit tests for normalizeApiError status mapping
-- [ ] #963 Testing: Add unit tests for outages filter URL synchronization
-- [ ] #962 State: Persist the outages page-size preference across sessions
-- [ ] #961 Filtering: Validate date-range filters so start is not after end
-- [ ] #960 Filtering: Add active filter chips with individual remove actions
-- [ ] #959 Search: Add a clear (x) button to the outages search input
-- [ ] #958 Search: Debounce the outages search input
-- [ ] #957 Performance: Add stable keys to outage list items
-- [ ] #956 Performance: Lazy-load the chart library on the dashboard route
-- [ ] #955 Performance: Debounce dashboard filter changes
-- [ ] #954 Performance: Memoize the outage table row component
-- [ ] #953 Responsive: Collapse outages filters into a mobile drawer
-- [ ] #952 Responsive: Stack KPI cards vertically on small screens
-- [ ] #951 Responsive: Make the outages table header sticky on scroll
-- [ ] #950 Responsive: Wrap wide tables in a horizontal scroll container
-- [ ] #949 Empty states: Add a 'log an outage' CTA to the outages empty state
-- [ ] #948 Error states: Add copy correlation ID action to error cards
-- [ ] #947 Error states: Add a friendly message for HTTP 413 responses
-- [ ] #946 Loading: Add a skeleton list for the webhooks page
-- [ ] #945 Loading: Add a route-level skeleton for the outage detail page
-- [ ] #944 Forms: Disable submit while a create/edit request is pending
-- [ ] #943 Forms: Trim leading and trailing whitespace on text input blur
-- [ ] #942 Forms: Add max-length hint beneath the site name input
-- [ ] #941 Accessibility: Add aria-live to asynchronous inline validation errors
-- [ ] #940 Accessibility: Add a caption to the payments table
-- [ ] #939 Accessibility: Add aria-current to the active pagination page
-- [ ] #938 Accessibility: Add an accessible name to the outages search input
-- [ ] #937 Accessibility: Announce toast confirmations via the live region
-- [ ] #936 Accessibility: Add aria-busy to loading containers
-- [ ] #935 Navigation: Add explicit focus-visible styling to nav links
-- [ ] #934 Navigation: Add tooltips to collapsed sidebar icon links
-- [ ] #933 Bulk Import: Show the detected row count before processing
-- [ ] #932 Bulk Import: Add per-row jump-to-error navigation in the validation table
-- [ ] #931 Bulk Import: Add remove-file control and filename display after selection
-- [ ] #930 Settings: Add one-click copy for the linked wallet address
-- [ ] #929 Settings: Add an empty state for the session management list
-- [ ] #928 Settings: Add confirmation before logging out all sessions
-- [ ] #927 Settings: Add last-login timestamp to the account profile card
-- [ ] #926 Config: Show a read-only notice when the user lacks admin role
-- [ ] #925 Config: Add success feedback after saving SLA configuration
-- [ ] #924 Config: Add an unsaved-changes badge to the SLA config form
-- [ ] #923 Config: Add a per-severity reset-to-default action
-- [ ] #922 Webhooks: Disable the test-ping action for inactive webhooks
-- [ ] #921 Webhooks: Add a delivery status legend to the history panel
-- [ ] #920 Webhooks: Add URL format hint to the create webhook form
-- [ ] #919 Webhooks: Add copy button for webhook endpoint ID
-- [ ] #918 Webhooks: Add an empty state when no webhooks are registered
-- [ ] #917 Payments: Add tooltip explanations for payment status pills
-- [ ] #916 Payments: Add confirmation before retrying a failed payment
-- [ ] #915 Payments: Add a page-size selector to the payments table
-- [ ] #914 Payments: Add an empty state when no payments match filters
-- [ ] #913 Payments: Add an asset badge next to the payment amount
-- [ ] #912 Payments: Add copy transaction hash action to payments table rows
-- [ ] #911 Dashboard: Add a retry action to the dashboard error state
-- [ ] #910 Dashboard: Respect reduced-motion for animated KPI counters
-- [ ] #909 Dashboard: Add helper text when no comparison baseline is available
-- [ ] #908 Dashboard: Add unit suffixes to KPI card values
-- [ ] #907 Dashboard: Format KPI values with locale-aware number separators
-- [ ] #906 Dashboard: Add accessible titles to each analytics chart SVG
-- [ ] #905 Dashboard: Add a manual refresh action to the dashboard header
-- [ ] #904 Dashboard: Add a 'last updated' caption under the dashboard header
-- [ ] #903 Outages: Add a back-to-list link in the outage not-found state
-- [ ] #902 Outages: Add a severity legend to the outages page header
-- [ ] #901 Outages: Add tooltip explaining SLA status badges on outage rows
-- [ ] #900 Outages: Add optimistic row removal when an outage is deleted
-- [ ] #899 Outages: Verify clear-search action resets pagination to first page
-- [ ] #898 Outages: Add inline numeric validation for affected subscribers field
-- [ ] #897 Outages: Display timezone abbreviation in detail page timestamps
-- [ ] #896 Outages: Add a Clear All Filters action to the outages toolbar
-- [ ] #895 Outages: Add record count summary above the outages table
-- [ ] #894 Outages: Add copy-to-clipboard action for outage ID on detail page
-- [ ] #893 Outages: Show relative "time ago" labels for detected_at values
-- [ ] #491 Payments: Add payment wallet balance threshold warning alert banner
-- [ ] #490 Payments: Add real-time payment status WebSocket listener
-- [ ] #489 Payments: Add payment transaction memo viewer in payment details drawer
-- [ ] #488 Payments: Add manual payment transaction override and force-retry modal
-- [ ] #487 Payments: Add payment transaction fee reimbursement monitor
-- [ ] #486 Payments: Add payment failure taxonomy breakdown pie chart
-- [ ] #485 Payments: Add export payment settlement ledger to CSV for accounting
+_All issues closed! 🎉_
 
 ## Closed Issues
 
+- [x] #1044 Telemetry privacy: apply redaction before buffering offline events
+- [x] #1043 Live delivery stream: resume from the last acknowledged event after reconnect
+- [x] #1042 Contract compatibility: report removed required fields separately from additions
+- [x] #1041 Destination safety: reject URL credentials and encoded loopback hosts
+- [x] #1040 Chain of custody: canonicalize evidence manifest ordering
+- [x] #1039 Timezone conversion: disambiguate repeated local times at DST fall-back
+- [x] #1038 CSV worker: cancel stale parse work when a new file replaces the current file
+- [x] #1037 Query recovery: cap repeated recovery attempts for persistent 401 responses
+- [x] #1036 Fetch client: distinguish aborts from network failures
+- [x] #1035 Network status: prevent duplicate reconnect banners during rapid flaps
+- [x] #1034 Session expiry modal: restore focus to the invoking control
+- [x] #1033 Webhook delivery filter: preserve the selected filter on browser back
+- [x] #1032 Webhook replay: handle a stale delivery after subscription deletion
+- [x] #1031 Webhook replay: guard duplicate submits while a replay is pending
 - [x] #1017 Dashboard: Add tooltips describing each KPI metric definition
 - [x] #1016 Responsive: Add a min-width guard for chart containers
 - [x] #1015 Docs: Add a component inventory doc for shared UI primitives
@@ -162,56 +81,42 @@
 - [x] #970 Docs: Document required frontend environment variables
 - [x] #969 Docs: Document how to run and scope frontend tests
 - [x] #968 Testing: Add accessibility test for the outage detail page
-- [x] #723 UI Resilience: Implement WebSocket connection auto-reconnect with exponential backoff
-- [x] #722 UI Resilience: Add local storage corruption recovery guard
-- [x] #721 UI Resilience: Implement image fallback loader for broken asset logos
-- [x] #720 UI Resilience: Add client-side mutation tracker and rollback manager
-- [x] #719 UI Resilience: Implement rate limit 429 Retry-After countdown toast
-- [x] #718 UI Resilience: Add empty data state fallback cards across all dashboard views
-- [x] #717 UI Resilience: Implement stale asset version detection and auto-reload prompt
-- [x] #716 UI Resilience: Add HTTP request timeout and retry policy for API client
-- [x] #715 UI Resilience: Implement automatic TanStack Query cache recovery handler
-- [x] #714 UI Resilience: Add API error envelope normalizer for user-friendly error toasts
-- [x] #713 UI Resilience: Implement offline network status banner with auto-reconnect
-- [x] #712 UI Resilience: Add global React Error Boundary with fallback recovery UI
-- [x] #711 Accessibility: Implement automated axe-core accessibility testing in Vitest test suite
-- [x] #710 Accessibility: Add ARIA sort attributes to data table header elements
-- [x] #709 Accessibility: Implement accessible form error summary component
-- [x] #708 Accessibility: Add ARIA expanded attributes to collapsible accordion components
-- [x] #707 Accessibility: Implement accessible modal closing via Escape key handler
-- [x] #706 Accessibility: Add Screen Reader Only (sr-only) descriptive text for metric trend indicators
-- [x] #705 Accessibility: Implement high-contrast focus ring styling for interactive controls
-- [x] #704 Accessibility: Add descriptive ARIA labels to all interactive icon buttons
-- [x] #703 Accessibility: Implement full keyboard navigation for custom data tables
-- [x] #702 Accessibility: Add skip to main content navigation link for keyboard users
-- [x] #701 Accessibility: Implement ARIA live region announcements for dynamic table updates
-- [x] #700 Accessibility: Add modal dialog keyboard focus trap wrapper
-- [x] #699 Form Validation: Add auto-focus on first invalid field on form validation failure
-- [x] #698 Form Validation: Implement form field reset button with dirty check prompt
-- [x] #697 Form Validation: Add mutation feedback toast notification hook
-- [x] #696 Form Validation: Implement smart datetime input picker with min/max constraint validation
-- [x] #695 Form Validation: Add input character counter for text area fields
-- [x] #694 Form Validation: Implement auto-save draft form state to local storage
-- [x] #693 Form Validation: Add custom regex format validator for site ID input fields
-- [x] #692 Form Validation: Implement race condition guard hook for concurrent mutation requests
-- [x] #691 Form Validation: Add Optimistic UI update and rollback hook for status toggles
-- [x] #690 Form Validation: Implement password strength meter and validator component
-- [x] #689 Form Validation: Add debounced live input validation feedback
-- [x] #688 Form Validation: Implement stale data detection guard hook on form submission
-- [x] #687 Form Validation: Add Zod schema validation for outage creation form
-- [x] #686 Navigation: Implement custom theme switcher toggle (Light, Dark, System)
-- [x] #685 Navigation: Add global notification bell dropdown menu in header
-- [x] #684 Navigation: Implement URL query parameter synchronization hook for table filters
-- [x] #683 Navigation: Add responsive mobile navigation drawer menu
-- [x] #682 Navigation: Implement un-saved form changes prompt before route navigation
-- [x] #681 Navigation: Add recently visited pages history dropdown in search bar
-- [x] #680 Navigation: Implement quick action floating action button (FAB) for mobile viewport
-- [x] #679 Navigation: Add active route focus indicator for screen readers
-- [x] #678 Navigation: Implement global keyboard shortcuts helper modal (Shift+?)
-- [x] #677 Navigation: Add breadcrumb navigation bar with dynamic route labels
-- [x] #676 Navigation: Implement sidebar navigation auto-collapse state persistence
-- [x] #675 Navigation: Add Cmd+K / Ctrl+K global command palette search modal
-- [x] #674 Webhooks UI: Implement webhook delivery search and filter controls
+- [x] #967 Testing: Add tests for SLA config form save/validation
+- [x] #966 Testing: Add tests for the create outage form validation
+- [x] #965 Testing: Add tests for payments service response mapping
+- [x] #964 Testing: Add unit tests for normalizeApiError status mapping
+- [x] #963 Testing: Add unit tests for outages filter URL synchronization
+- [x] #962 State: Persist the outages page-size preference across sessions
+- [x] #961 Filtering: Validate date-range filters so start is not after end
+- [x] #960 Filtering: Add active filter chips with individual remove actions
+- [x] #959 Search: Add a clear (x) button to the outages search input
+- [x] #958 Search: Debounce the outages search input
+- [x] #957 Performance: Add stable keys to outage list items
+- [x] #956 Performance: Lazy-load the chart library on the dashboard route
+- [x] #955 Performance: Debounce dashboard filter changes
+- [x] #954 Performance: Memoize the outage table row component
+- [x] #953 Responsive: Collapse outages filters into a mobile drawer
+- [x] #952 Responsive: Stack KPI cards vertically on small screens
+- [x] #951 Responsive: Make the outages table header sticky on scroll
+- [x] #950 Responsive: Wrap wide tables in a horizontal scroll container
+- [x] #949 Empty states: Add a 'log an outage' CTA to the outages empty state
+- [x] #948 Error states: Add copy correlation ID action to error cards
+- [x] #947 Error states: Add a friendly message for HTTP 413 responses
+- [x] #946 Loading: Add a skeleton list for the webhooks page
+- [x] #945 Loading: Add a route-level skeleton for the outage detail page
+- [x] #944 Forms: Disable submit while a create/edit request is pending
+- [x] #943 Forms: Trim leading and trailing whitespace on text input blur
+- [x] #942 Forms: Add max-length hint beneath the site name input
+- [x] #941 Accessibility: Add aria-live to asynchronous inline validation errors
+- [x] #940 Accessibility: Add a caption to the payments table
+- [x] #939 Accessibility: Add aria-current to the active pagination page
+- [x] #938 Accessibility: Add an accessible name to the outages search input
+- [x] #937 Accessibility: Announce toast confirmations via the live region
+- [x] #936 Accessibility: Add aria-busy to loading containers
+- [x] #935 Navigation: Add explicit focus-visible styling to nav links
+- [x] #934 Navigation: Add tooltips to collapsed sidebar icon links
+- [x] #933 Bulk Import: Show the detected row count before processing
+- [x] #932 Bulk Import: Add per-row jump-to-error navigation in the validation table
 
 ---
 _Auto-generated by `scripts/update-wave5-dashboard.mjs`. Do not edit manually._
