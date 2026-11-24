@@ -1,14 +1,14 @@
 # Wave 5 Closure Dashboard
 
-> Last updated: 2026-11-23
+> Last updated: 2026-11-24
 
 ## Issue Completion
 
 | Metric | Value |
 |--------|-------|
-| Total Wave 5 issues | 120 |
+| Total Wave 5 issues | 121 |
 | Closed | 100 |
-| Open | 20 |
+| Open | 21 |
 | Completion | 83% |
 
 ## Open Issues
@@ -22,6 +22,7 @@
 - [ ] #469 Outages: Add affected services multi-select tag input component
 - [ ] #468 Outages: Add duplicate outage detection warning when logging incident for same site
 - [ ] #467 Outages: Add site ID autocomplete search input in Create Outage form
+- [ ] #466 Outages: Add outage timeline audit trail event history log
 - [ ] #465 Outages: Add root cause taxonomy tags (Hardware, Fiber Cut, Power, Third-Party)
 - [ ] #464 Outages: Add affected subscribers impact calculation helper in OutageDetailsModal
 - [ ] #463 Outages: Add bulk outage status update actions (Acknowledge, Assign, Resolve)
